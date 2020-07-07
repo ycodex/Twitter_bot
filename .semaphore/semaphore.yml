@@ -11,3 +11,7 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+            - pip install -r requirements.txt
+            - python main.py
+      secrets:
+        - name: keys
