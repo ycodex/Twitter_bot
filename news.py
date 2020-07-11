@@ -21,7 +21,7 @@ def req():
 
 def read_and_compare(date):
 
-    with open('db.csv', newline='') as csvfile:
+    with open('db.csv', 'r') as csvfile:
         spamreader = csv.reader(csvfile, skipinitialspace=True)
         lis=[]
         for row in spamreader:
