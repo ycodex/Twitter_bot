@@ -37,8 +37,8 @@ def main():
         if(i<2):
             s=s+"-------"+"\n"
             # print("-----------------")  #for character limit
-    print(s)
-    # return s
+    # print(s)
+    return s
 
 
 main()
