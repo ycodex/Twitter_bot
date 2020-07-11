@@ -36,7 +36,7 @@ def read_and_compare(date):
 
    
 def write(date,length):
-    with open('db.csv','a', newline='') as csvfile:
+    with open('db.csv','a') as csvfile:
         
         writer=csv.writer(csvfile)
         length+=2
