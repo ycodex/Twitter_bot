@@ -35,10 +35,10 @@ def main():
         # print(f"Cured : {cured}")
         # print(f"Death : {death}")
         if(i<2):
-            s=s+"-----------------"+"\n"
+            s=s+"-------"+"\n"
             # print("-----------------")  #for character limit
-    
-    return s
+    print(s)
+    # return s
 
 
 main()
