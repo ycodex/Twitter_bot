@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv,find_dotenv
 import news
 import random
-
+import time
 
 
 
@@ -33,9 +33,13 @@ def choose(key):
         if(news.read_and_compare(d)):
             tweets=news.post(t)
             key.update_status(tweets)
-
+        else:
+            tweet=main()
+            key.update_status(tweet)
 
 
 if __name__=='__main__':
-    apis=auth()
-    choose(apis)
+    while True:
+        apis=auth()
+        choose(apis)
+        time.sleep(86400)
