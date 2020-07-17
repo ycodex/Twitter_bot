@@ -23,23 +23,22 @@ def auth():
 
 
 
-def choose(key):
-    option=random.randint(0,1)
-    if(option==0):
-        tweet=main()
-        key.update_status(tweet)
-    else:
-        d,t=news.req()
-        if(news.read_and_compare(d)):
-            tweets=news.post(t)
-            key.update_status(tweets)
-        else:
-            tweet=main()
-            key.update_status(tweet)
+def count_cases(key):
+
+    tweet=main()
+    key.update_status(tweet)
+    time.sleep(86400)
+def news_post(key):
+    d,t=news.req()
+    if(news.read_and_compare(d)):
+        tweets=news.post(t)
+        key.update_status(tweets)
+        time.sleep(43200)
 
 
 if __name__=='__main__':
     while True:
         apis=auth()
-        choose(apis)
-        time.sleep(86400)
+        count_cases(apis)
+        news_post(apis)
+        

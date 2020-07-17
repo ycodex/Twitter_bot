@@ -47,8 +47,11 @@ def post(table2):
     s=""
     s+='Latest updates from MOHFW\n'
     s+="-------------------------\n"
-    s+=str(table2.find("a").contents[0])
+    s+=str((table2.find("a").contents[0])[:])
+    if(len(s)>200):
+        s=s[:190]+"..."
     s+="\n"
+
     s+=table2.find("a")["href"]
     return s
 
