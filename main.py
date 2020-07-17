@@ -26,13 +26,19 @@ def auth():
 def count_cases(key):
 
     tweet=main()
-    key.update_status(tweet)
+    try:
+        key.update_status(tweet)
+    except Exception as e:
+        pass
     time.sleep(86400)
 def news_post(key):
     d,t=news.req()
     if(news.read_and_compare(d)):
         tweets=news.post(t)
-        key.update_status(tweets)
+        try:
+            key.update_status(tweets)
+        except Exception as e:
+            pass
         time.sleep(43200)
 
 
