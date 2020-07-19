@@ -1,0 +1,247 @@
+[
+    {
+        "state": "Maharashtra",
+        "cases": 123678,
+        "recoveries": 165663,
+        "deaths": 11596,
+        "total": 300937
+    },
+    {
+        "state": "Tamil Nadu",
+        "cases": 49455,
+        "recoveries": 113856,
+        "deaths": 2403,
+        "total": 165714
+    },
+    {
+        "state": "Delhi",
+        "cases": 16711,
+        "recoveries": 101274,
+        "deaths": 3597,
+        "total": 121582
+    },
+    {
+        "state": "Karnataka",
+        "cases": 36637,
+        "recoveries": 21775,
+        "deaths": 1240,
+        "total": 59652
+    },
+    {
+        "state": "Gujarat",
+        "cases": 11233,
+        "recoveries": 34035,
+        "deaths": 2122,
+        "total": 47390
+    },
+    {
+        "state": "Uttar Pradesh",
+        "cases": 17264,
+        "recoveries": 28664,
+        "deaths": 1108,
+        "total": 47036
+    },
+    {
+        "state": "Andhra Pradesh",
+        "cases": 22260,
+        "recoveries": 21763,
+        "deaths": 586,
+        "total": 44609
+    },
+    {
+        "state": "Telangana",
+        "cases": 12764,
+        "recoveries": 30607,
+        "deaths": 409,
+        "total": 43780
+    },
+    {
+        "state": "West Bengal",
+        "cases": 15594,
+        "recoveries": 23539,
+        "deaths": 1076,
+        "total": 40209
+    },
+    {
+        "state": "Rajasthan",
+        "cases": 6803,
+        "recoveries": 21144,
+        "deaths": 553,
+        "total": 28500
+    },
+    {
+        "state": "Haryana",
+        "cases": 5885,
+        "recoveries": 19318,
+        "deaths": 344,
+        "total": 25547
+    },
+    {
+        "state": "Bihar",
+        "cases": 9392,
+        "recoveries": 15536,
+        "deaths": 208,
+        "total": 25136
+    },
+    {
+        "state": "Assam",
+        "cases": 7700,
+        "recoveries": 15165,
+        "deaths": 53,
+        "total": 22918
+    },
+    {
+        "state": "Madhya Pradesh",
+        "cases": 6193,
+        "recoveries": 14864,
+        "deaths": 706,
+        "total": 21763
+    },
+    {
+        "state": "Odisha",
+        "cases": 4678,
+        "recoveries": 11937,
+        "deaths": 86,
+        "total": 16701
+    },
+    {
+        "state": "Jammu and Kashmir",
+        "cases": 5797,
+        "recoveries": 7165,
+        "deaths": 236,
+        "total": 13198
+    },
+    {
+        "state": "Kerala",
+        "cases": 6420,
+        "recoveries": 5199,
+        "deaths": 40,
+        "total": 11659
+    },
+    {
+        "state": "Punjab",
+        "cases": 3092,
+        "recoveries": 6454,
+        "deaths": 246,
+        "total": 9792
+    },
+    {
+        "state": "Jharkhand",
+        "cases": 2685,
+        "recoveries": 2611,
+        "deaths": 46,
+        "total": 5342
+    },
+    {
+        "state": "Chhattisgarh",
+        "cases": 1551,
+        "recoveries": 3658,
+        "deaths": 24,
+        "total": 5233
+    },
+    {
+        "state": "Uttarakhand",
+        "cases": 1143,
+        "recoveries": 3081,
+        "deaths": 52,
+        "total": 4276
+    },
+    {
+        "state": "Goa",
+        "cases": 1425,
+        "recoveries": 2038,
+        "deaths": 21,
+        "total": 3484
+    },
+    {
+        "state": "Tripura",
+        "cases": 914,
+        "recoveries": 1735,
+        "deaths": 5,
+        "total": 2654
+    },
+    {
+        "state": "Puducherry",
+        "cases": 800,
+        "recoveries": 1066,
+        "deaths": 28,
+        "total": 1894
+    },
+    {
+        "state": "Manipur",
+        "cases": 709,
+        "recoveries": 1182,
+        "deaths": 0,
+        "total": 1891
+    },
+    {
+        "state": "Himachal Pradesh",
+        "cases": 410,
+        "recoveries": 1036,
+        "deaths": 11,
+        "total": 1457
+    },
+    {
+        "state": "Ladakh",
+        "cases": 173,
+        "recoveries": 985,
+        "deaths": 1,
+        "total": 1159
+    },
+    {
+        "state": "Nagaland",
+        "cases": 546,
+        "recoveries": 432,
+        "deaths": 0,
+        "total": 978
+    },
+    {
+        "state": "Chandigarh",
+        "cases": 203,
+        "recoveries": 485,
+        "deaths": 12,
+        "total": 700
+    },
+    {
+        "state": "Arunachal Pradesh",
+        "cases": 373,
+        "recoveries": 274,
+        "deaths": 3,
+        "total": 650
+    },
+    {
+        "state": "Dadra and Nagar Haveli and Daman and Diu",
+        "cases": 186,
+        "recoveries": 414,
+        "deaths": 2,
+        "total": 602
+    },
+    {
+        "state": "Meghalaya",
+        "cases": 350,
+        "recoveries": 66,
+        "deaths": 2,
+        "total": 418
+    },
+    {
+        "state": "Mizoram",
+        "cases": 117,
+        "recoveries": 167,
+        "deaths": 0,
+        "total": 284
+    },
+    {
+        "state": "Sikkim",
+        "cases": 185,
+        "recoveries": 90,
+        "deaths": 0,
+        "total": 275
+    },
+    {
+        "state": "Andaman and Nicobar Islands",
+        "cases": 53,
+        "recoveries": 145,
+        "deaths": 0,
+        "total": 198
+    }
+]
