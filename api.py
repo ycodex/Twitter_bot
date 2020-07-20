@@ -1,15 +1,18 @@
 import requests
 from operator import itemgetter 
 
-def main():
+def request_data():
     res=requests.get("https://covid19-mohfw.herokuapp.com/states")
     
     if res.status_code!=200:
         raise Exception("ERROR:unsuccessful")
     data=res.json()
     data=data["states"]
-    sorted_data=(sorted(data, key=itemgetter('cases'),reverse=True))
-    #return sorted_data
+    sorted_data=(sorted(data, key=itemgetter('total'),reverse=True))
+    return sorted_data
+    
+    
+def generate_tweet(data):
     s="Current  TOP states:\n"
     s+="\n"
     # Dict={ }
@@ -18,11 +21,11 @@ def main():
     #print("Current  TOP states:\n")
     
     for i in range(3):
-        name=sorted_data[i]['state']
-        total=sorted_data[i]['cases']
-        active=sorted_data[i]['recoveries']
-        cured=sorted_data[i]['deaths']
-        death=sorted_data[i]['total']
+        name=data[i]['state']
+        total=data[i]['cases']
+        active=data[i]['recoveries']
+        cured=data[i]['deaths']
+        death=data[i]['total']
         s+="Name : "+str(name)+"\n"
         s+="Cases : "+str(total)+"\n"
         s+="Recoveries : "+str(active)+"\n"
@@ -35,10 +38,10 @@ def main():
         # print(f"Cured : {cured}")
         # print(f"Death : {death}")
         if(i<2):
-            s=s+"-------"+"\n"
+            s=s+"---"+"\n"
             # print("-----------------")  #for character limit
     # print(s)
     return s
 
-
-main()
+# dict_data=request_data()
+# tweet=generate_tweet(dict_data)
