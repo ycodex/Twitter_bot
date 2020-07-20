@@ -24,9 +24,9 @@ def create_csv(sorted_data):
     csv_data= pd.read_json("data.json")
     csv_data.to_csv("data.csv",index=None)
 
-def extract_data():
-    table = pd.read_csv("data.csv")
-    table.head()
+def extract_data(sorted_data):
+    # table = pd.read_csv("data.csv")
+    # table.head()
 
     name=[]
     total=[]
@@ -52,10 +52,10 @@ def extract_data():
     f_data.append(cured)
     f_data.append(death)
     # print(f_data)
-    return f_data
+    return f_data,name
 
 
-def plot_and_save_graph(f_data):
+def plot_and_save_graph(f_data,name):
     X = np.arange(4)
     fig = plt.figure()
     ax = fig.add_axes([0,0,1,1])
@@ -71,7 +71,7 @@ def plot_and_save_graph(f_data):
     plt.savefig("post.png",bbox_inches='tight')
 
 
-dict_data=api.request_data()
-create_csv()
-extracted_data=extract_data()
-plot_and_save_graph(extracted_data)
+# dict_data=api.request_data()
+# create_csv(dict_data)
+# extracted_data=extract_data()
+# plot_and_save_graph(extracted_data)

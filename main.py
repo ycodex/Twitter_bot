@@ -27,9 +27,9 @@ def count_cases(key):
 
     dict_data=api.request_data()
     tweet=api.generate_tweet(dict_data)
-    graph.create_csv(dict_data)
-    graph_data=graph.extract_data()
-    graph.plot_and_save_graph(graph_data)
+    # graph.create_csv(dict_data)
+    graph_data,state_names=graph.extract_data(dict_data)
+    graph.plot_and_save_graph(graph_data,state_names)
     image="post.png"
 
     try:

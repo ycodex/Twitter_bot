@@ -21,11 +21,11 @@ def generate_tweet(data):
     #print("Current  TOP states:\n")
     
     for i in range(3):
-        name=sorted_data[i]['state']
-        total=sorted_data[i]['cases']
-        active=sorted_data[i]['recoveries']
-        cured=sorted_data[i]['deaths']
-        death=sorted_data[i]['total']
+        name=data[i]['state']
+        total=data[i]['cases']
+        active=data[i]['recoveries']
+        cured=data[i]['deaths']
+        death=data[i]['total']
         s+="Name : "+str(name)+"\n"
         s+="Cases : "+str(total)+"\n"
         s+="Recoveries : "+str(active)+"\n"
@@ -43,5 +43,5 @@ def generate_tweet(data):
     # print(s)
     return s
 
-dict_data=request_data()
-tweet=generate_tweet(dict_data)
+# dict_data=request_data()
+# tweet=generate_tweet(dict_data)
