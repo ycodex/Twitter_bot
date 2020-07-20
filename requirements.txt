@@ -2,6 +2,5 @@ pandas
 requests
 numpy
 matplotlib
-json
 tweepy
 python-dotenv
