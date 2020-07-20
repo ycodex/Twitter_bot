@@ -1,11 +1,11 @@
 import tweepy as tp
-from api import main
+import api
 import os
 from dotenv import load_dotenv,find_dotenv
 import news
 import random
 import time
-
+import graph 
 
 
 def auth():
@@ -25,12 +25,20 @@ def auth():
 
 def count_cases(key):
 
-    tweet=main()
+    dict_data=api.request_data()
+    tweet=api.generate_tweet(dict_data)
+    graph.create_csv(dict_data)
+    graph_data=graph.extract_data()
+    graph.plot_and_save_graph(graph_data)
+    image="post.png"
+
     try:
-        key.update_status(tweet)
+        key.update_with_media(image,tweet)
+
     except Exception as e:
         pass
-    time.sleep(86400)
+    # time.sleep(86400)
+
 def news_post(key):
     d,t=news.req()
     if(news.read_and_compare(d)):
@@ -39,12 +47,12 @@ def news_post(key):
             key.update_status(tweets)
         except Exception as e:
             pass
-        time.sleep(43200)
+        # time.sleep(43200)
 
 
 if __name__=='__main__':
-    while True:
-        apis=auth()
-        count_cases(apis)
-        news_post(apis)
+    # while True:
+    apis=auth()
+    count_cases(apis)
+    news_post(apis)
         
