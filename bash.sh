@@ -2,7 +2,7 @@
 git clone https://github.com/ycodex/Twitter_bot.git
 cd Twitter_bot
 #install requirements
-python -r requirements.txt
+pip install -r requirements.txt
 
 #run main
 python main.py
