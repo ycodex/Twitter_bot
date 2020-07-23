@@ -8,7 +8,7 @@ def main():
         raise Exception("ERROR:unsuccessful")
     data=res.json()
     data=data["states"]
-    sorted_data=(sorted(data, key=itemgetter('cases'),reverse=True))
+    sorted_data=(sorted(data, key=itemgetter('total'),reverse=True))
     #return sorted_data
     s="Current  TOP states:\n"
     s+="\n"
