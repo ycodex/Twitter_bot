@@ -33,8 +33,8 @@ def count_cases(key):
     image="post.png"
 
     try:
-        #key.update_with_media(image,tweet)
-        print(tweet)
+        key.update_with_media(image,tweet)
+        # print(tweet)
     except Exception as e:
         pass
     # time.sleep(86400)
@@ -44,8 +44,8 @@ def news_post(key):
     if(news.read_and_compare(d)):
         tweets=news.post(t)
         try:
-            #key.update_status(tweets)
-            print(tweets)
+            key.update_status(tweets)
+            # print(tweets)
         except Exception as e:
             pass
         # time.sleep(43200)
